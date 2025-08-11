@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+}
+
+/* ========== HEADER =========== */
+
+header{
+    background-color: rgb(255,255,255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;
+    width: 50%;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 1000;
+}
+header button{
+    height:25px;
+    border: none;
+    color: black;
+    transition: color 0.5 ease;
+    background-color: white;
+    
+}
+header button:hover{
+    color: rgb(61, 61, 243);
+}
+
+/* ============ MAIN PAGE ============= */
+
+.introduction-section{
+    background-image: url("../images/bg-homepage-desktop.jpg");
+    background-size:cover;
+    height: 100dvh;
+    padding-top: 200px;
+}
+.introduction-box{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+}
+.introduction-box h1, .introduction-box h2{
+    margin: 5px;
+}
+.introduction-box a{
+    margin-top: 10px;
+    width: 30%;
+}
+
+
+
+/* ========== ABOUT ME ============ */
+.about-me-section{
+    margin-bottom: 50px;
+}
+.about-me-details{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 150px;
+    margin-left: 100px;
+    
+}
+.about-me-details img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.about-me-description{
+    width: 40%;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+/* =========== FOOTER =========== */
+
+footer{
+    background-color: rgb(61, 61, 243);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 1px;
+}
+footer a img{
+    width: 60px;
+    height: 60px;
+}
+.mail-phone a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.main-footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 40px;
+}
+footer p{
+    font-weight: bold;
+}
+
+
+.contact-form{
+    width: 50%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
