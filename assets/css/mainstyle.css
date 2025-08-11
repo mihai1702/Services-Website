@@ -6,7 +6,7 @@ body{
 
 header{
     background-color: rgb(255,255,255);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 50%;
     left: 50%;
     top: 10px;
@@ -60,7 +60,48 @@ header button:hover{
     margin-top: 10px;
     width: 30%;
 }
+.list-company-button{
+    width: 160px !important;
+}
+.platform-purpose-section{
+    margin: 4rem 3rem 4rem 3rem;
+}
+.platform-purpose-section h1{
+    font-weight: bold;
+}
+.platform-purpose-section h2{
+    font-size: 28px;
+    margin-top: 15px;
+}
+.platform-purpose-section ul{
+    margin-left: 15px;
+    font-size: 1.1rem;
+}
+.platform-purpose-section a{
+    text-decoration: none;
+    font-size: 28px;
+}
+#scroll-icon{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
+
+}
+#scroll-icon.hidden{
+    opacity: 0;
+}
 
 
 /* ========== ABOUT ME ============ */
@@ -122,6 +163,25 @@ footer p{
     width: 50%;
     margin-top: 150px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =============== REGISTER PAGE ================= */
+.register-form{
+    width: 80dvh;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+.type-of-register-buttons{
+    display: flex;
+}
+.type-of-register-buttons button{
+    width: 50%;
+}
+.form-control{
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
