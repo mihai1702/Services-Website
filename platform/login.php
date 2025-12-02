@@ -15,19 +15,20 @@
     <form id="login-form">
         <h2>Login</h2>
         <div class="mb-3">
-            <input class="form-control" id="username-input" type="text" placeholder="Enter email" required>
+            <input class="form-control" id="login-username-input" type="text" placeholder="Enter email" required>
         </div>
         <div class="mb-3">
-            <input class="form-control" id="password-input" type="password" placeholder="Enter password" required>
+            <input class="form-control" id="login-password-input" type="password" placeholder="Enter password" required>
         </div>
         <button class="btn btn-primary" type="submit">Submit</button>
-        <span class="invalid-feedback" id="login-error"></span>
+        <span class="invalid-feedback" id="login-error">Wrong Username or Password</span>
         <p>Don't have an account? <a href="register.php">Register</a></p>
     </form>
     <?php
-        include "../inc/footer.php";
+        include "../inc/footer.php";    
     ?>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="offers-js.js"></script>
+    <script src="platform-js.js"></script>
 </body>
 </html>

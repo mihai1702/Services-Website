@@ -13,6 +13,9 @@ document.getElementById('company-btn').addEventListener("click", ()=>{
     document.getElementById('company-btn').classList.add('btn-active')
 })
 
+
+/// register script
+
 var emailError=false
 var usernameError=false
 var passwordError=false
@@ -192,3 +195,49 @@ $(document).ready(function(){
     });
 })
 
+/// login script
+
+function loginvalitation(user, password, error){
+    var username_error=$(error)
+    $.ajax({
+        type:'POST',
+        url:'log-in-validation.php',
+        data:{
+            username:user,
+            password:password
+        },
+        dataType:'json',
+        success:function(response){
+            
+            if(response.success==false){
+                username_error.show()
+                usernameError=true
+                console.log(response.message)
+            }
+            else{
+                username_error.hide()
+                usernameError=false
+                console.log(response.message)
+
+            }
+        },
+        error: function (xhr, status, error) {
+            console.log("AJAX Error Status:", status);
+            console.log("AJAX Error:", error);
+            console.log("AJAX Response Text:", xhr.responseText);
+            alert("A apărut o eroare verificare. Detalii în consolă.");
+        }
+    })
+}
+
+$(document).ready(function(){
+    document.getElementById('login-form').addEventListener('submit', function(e){
+        e.preventDefault();
+        console.log("salut")
+        var username = document.getElementById('login-username-input').value; 
+        var password = document.getElementById('login-password-input').value; 
+        var errorId = '#login-error';
+        loginvalitation(username, password, errorId)
+
+    })
+})
