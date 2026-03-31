@@ -11,7 +11,7 @@ Proiectul este **în dezvoltare** și servește ca bază pentru un marketplace d
 
 ---
 
-## 🛠️ Tehnologii folosite
+## Tehnologii folosite
 
 - **PHP**
 - **MySQL**
