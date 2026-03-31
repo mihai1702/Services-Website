@@ -22,7 +22,7 @@ Proiectul este **în dezvoltare** și servește ca bază pentru un marketplace d
 
 ---
 
-## 🚀 Instalare & Rulare locală
+## Instalare & Rulare locală
 
 1. Clonează repository-ul:
 
