@@ -1,6 +1,6 @@
 # Services-Website
 
-## 📌 Descriere
+## Descriere
 
 **Services-Website** este o platformă web de tip *Fiverr*, unde utilizatorii pot:
 - vedea servicii oferite de diferiți prestatori,
@@ -50,7 +50,7 @@ $db   = "services_website";
 
 ---
 
-## 📅 Roadmap (ce urmează)
+## Ce urmeaza implementat
 
 - Sistem complet de autentificare (login / register)
 - Roluri utilizatori (client / prestator)
